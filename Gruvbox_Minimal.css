@@ -94,9 +94,9 @@ position: right !important;
 }
 
 /* Hide the favicon for tabs */
-hbox.tab-content .tab-icon-image {
+/* hbox.tab-content .tab-icon-image {
  display: none !important;
-}
+} */
 
 /* Show the favicon for tabs that are pinned */
 hbox.tab-content[pinned=true] .tab-icon-image {
@@ -317,6 +317,18 @@ justify-content: center !important;
 #sidebar-box {
  --sidebar-background-color: var(--sidebar-bg) !important;
   min-width: 40px !important; 
+}
+
+#sidebar-select-box {
+  --sidebar-background-color: var(--sidebar-bg) !important;
+  max-width: 40px !important;
+  width: 40px !important;
+  min-width: 40px !important; 
+}
+
+.sidepanel-browser-icon{
+  padding: 12px !important;
+
 }
 
 splitter#sidebar-splitter {
