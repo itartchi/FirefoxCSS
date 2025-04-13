@@ -48,6 +48,10 @@
   padding:0px !important;
 }
 
+#tabbrowser-arrowscrollbox{
+  margin-top: 5px !important;
+}
+
 .tab-background {
  background: transparent !important;
 }
