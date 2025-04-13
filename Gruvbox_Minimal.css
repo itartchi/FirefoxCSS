@@ -1,38 +1,39 @@
 :root {
 
   /* Minimal Functional Fox variables*/
- --mff-bg: #282828;
- --mff-icon-color: #f1feff;
- --mff-nav-toolbar-padding: 8px;
- --mff-sidebar-bg: var(--mff-bg);
- --mff-sidebar-color: #e0fbfc;
- --mff-tab-border-radius: 0px;
- --mff-tab-color: #fefefa;
- --mff-tab-font-family: "Cantarell", sans;
- --mff-tab-font-size: 11pt;
- --mff-tab-font-weight: 400;
- --mff-tab-height: 32px;
- --mff-tab-pinned-bg: #2da4a8;
- --mff-tab-selected-bg: #458688;
- --mff-urlbar-color: #ebdbb2;
- --mff-urlbar-focused-color: #fce4e0;
- --mff-urlbar-font-family: "Cantarell", serif;
- --mff-urlbar-font-size: 12pt;
- --mff-urlbar-font-weight: 700;
- --mff-urlbar-results-color: #ebdbb2;
- --mff-urlbar-background-color: #8ec07c;
- --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
- --mff-urlbar-results-font-size: 12pt;
- --mff-urlbar-results-font-weight: 700;
- --mff-urlbar-results-url-color: #fabd2f;
+ --bg: #282828;
+ --bg2: #1d2021;
+ --icon-color: #f1feff;
+ --nav-toolbar-padding: 8px;
+ --sidebar-bg: var(--bg);
+ --sidebar-color: #e0fbfc;
+ --tab-border-radius: 0px;
+ --tab-color: #fefefa;
+ --tab-font-family: "Cantarell", sans;
+ --tab-font-size: 11pt;
+ --tab-font-weight: 400;
+ --tab-height: 32px;
+ --tab-pinned-bg: #2da4a8;
+ --tab-selected-bg: #458688;
+ --urlbar-color: #ebdbb2;
+ --urlbar-focused-color: #fce4e0;
+ --urlbar-font-family: "Cantarell", serif;
+ --urlbar-font-size: 12pt;
+ --urlbar-font-weight: 700;
+ --urlbar-results-color: #ebdbb2;
+ --urlbar-background-color: #8ec07c;
+ --urlbar-results-font-family: "mononoki Nerd Font", serif;
+ --urlbar-results-font-size: 12pt;
+ --urlbar-results-font-weight: 700;
+ --urlbar-results-url-color: #fabd2f;
 
  /* Overriden Firefox variables*/
- --autocomplete-popup-background: var(--mff-bg) !important;
- --default-arrowpanel-background: var(--mff-bg) !important;
+ --autocomplete-popup-background: var(--bg) !important;
+ --default-arrowpanel-background: var(--bg) !important;
  --default-arrowpanel-color: #fefefa !important;
- --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
+ --lwt-toolbarbutton-icon-fill: var(--icon-color) !important;
  --panel-disabled-color: #f9f9fa80;
- --toolbar-bgcolor: var(--mff-bg) !important;
+ --toolbar-bgcolor: var(--bg) !important;
  --urlbar-separator-color: #01152bdf !important;
 }
 
@@ -50,6 +51,7 @@
 
 #tabbrowser-arrowscrollbox{
   margin-top: 5px !important;
+  margin-inline-start: 5px;
 }
 
 .tab-background {
@@ -57,7 +59,7 @@
 }
 
 .tabbrowser-tab[selected="true"]{
-  background: var(--mff-tab-selected-bg) !important;
+  background: var(--tab-selected-bg) !important;
   border-radius: 5px !important;
 }
 
@@ -85,10 +87,10 @@ position: right !important;
 }
 
 .tab-text {
- font-family: var(--mff-tab-font-family);
- font-weight: var(--mff-tab-font-weight);
- font-size: var(--mff-tab-font-size) !important;
- color: var(--mff-tab-color);
+ font-family: var(--tab-font-family);
+ font-weight: var(--tab-font-weight);
+ font-size: var(--tab-font-size) !important;
+ color: var(--tab-color);
 }
 
 /* Hide the favicon for tabs */
@@ -136,23 +138,23 @@ hbox.tab-content[pinned=true] .tab-text {
 */
 
 .urlbar-icon > image {
- fill: var(--mff-icon-color) !important;
- color: var(--mff-icon-color) !important;
+ fill: var(--icon-color) !important;
+ color: var(--icon-color) !important;
 }
 
 .toolbarbutton-text {
- color: var(--mff-icon-color)  !important;
+ color: var(--icon-color)  !important;
 }
 .urlbar-icon {
- color: var(--mff-icon-color)  !important;
+ color: var(--icon-color)  !important;
 
 }
 
 #urlbar-results {
- font-family: var(--mff-urlbar-results-font-family);
- font-weight: var(--mff-urlbar-results-font-weight);
- font-size: var(--mff-urlbar-results-font-size) !important;
- color: var(--mff-urlbar-results-color) !important;
+ font-family: var(--urlbar-results-font-family);
+ font-weight: var(--urlbar-results-font-weight);
+ font-size: var(--urlbar-results-font-size) !important;
+ color: var(--urlbar-results-color) !important;
 }
 
 .urlbarView-row[type="bookmark"] > span{
@@ -164,10 +166,10 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 .urlbarView-url, .search-panel-one-offs-container {
- color: var(--mff-urlbar-results-url-color) !important;
- font-family: var(--mff-urlbar-font-family);
- font-weight: var(--mff-urlbar-results-font-weight);
- font-size: var(--mff-urlbar-font-size) !important;
+ color: var(--urlbar-results-url-color) !important;
+ font-family: var(--urlbar-font-family);
+ font-weight: var(--urlbar-results-font-weight);
+ font-size: var(--urlbar-font-size) !important;
 }
 
 .urlbarView-favicon, .urlbarView-type-icon {
@@ -175,10 +177,10 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 #urlbar-input {
-  font-size: var(--mff-urlbar-font-size) !important;
-  color: var(--mff-urlbar-color) !important;
-  font-family: var(--mff-urlbar-font-family) !important;
-  font-weight: var(--mff-urlbar-font-weight)!important;
+  font-size: var(--urlbar-font-size) !important;
+  color: var(--urlbar-color) !important;
+  font-family: var(--urlbar-font-family) !important;
+  font-weight: var(--urlbar-font-weight)!important;
   text-align: center !important;
 
 }
@@ -215,7 +217,7 @@ toolbar {
   border: none !important;
   text-align: center !important;
   justify-content: center !important; 
-  background-color: var(--mff-urlbar-background-color) !important;
+  background-color: var(--urlbar-background-color) !important;
   border-radius: 50px;
   align-items: center;
   position: absolute;
@@ -227,11 +229,11 @@ toolbar {
 }
 
 .toolbar-items {
- background-color: var(--mff-bg) !important;
+ background-color: var(--bg) !important;
 }
 
 #sidebar-search-container {
- background-color: var(--mff-sidebar-bg) !important;
+ background-color: var(--sidebar-bg) !important;
 }
 
 box.panel-arrowbox {
@@ -256,7 +258,7 @@ image#star-button {
 }
 
 toolbar#nav-bar {
- padding: var(--mff-nav-toolbar-padding) !important;
+ padding: var(--nav-toolbar-padding) !important;
 }
 
 toolbar#nav-bar {
@@ -268,7 +270,7 @@ toolbar#nav-bar {
 }
 
 #urlbar-input:focus {
- color: var(--mff-urlbar-focused-color) !important;
+ color: var(--urlbar-focused-color) !important;
 }
 
 
@@ -305,15 +307,16 @@ justify-content: center !important;
 */
 
 .close-icon, .urlbar-icon {
- fill: var(--mff-icon-color) !important;
+ fill: var(--icon-color) !important;
 }
 
 .sidebar-placesTree {
- color: var(--mff-sidebar-color) !important;
+ color: var(--sidebar-color) !important;
 }
 
 #sidebar-box {
- --sidebar-background-color: var(--mff-sidebar-bg) !important;
+ --sidebar-background-color: var(--sidebar-bg) !important;
+  min-width: 40px !important; 
 }
 
 splitter#sidebar-splitter {
@@ -357,15 +360,36 @@ display: none !important;
 }
 
 .titlebar-buttonbox-container{
-  background-color: var(--mff-bg) !important;
+  background-color: var(--bg) !important;
 }
 
 /*  Menu Bar */
 #menubar-items {
-  background-color: var(--mff-bg) !important;
+  background-color: var(--bg) !important;
 }
 
 /* Settings */
 .sticky-container{
-background-color: #00373fcf !important;
+background-color: var(--bg) !important;
+}
+
+#content{
+  background-color: var(--bg) !important;  
+}
+
+#sidebar{
+  background-color: var(--bg2);
+}
+
+.navigation{
+  background-color: var(--bg2);
+}
+
+.main-search, .main-heading, .main-content{
+  background-color: var(--bg) !important;  
+}
+
+.category, .sidebar-footer-list{
+  margin-inline-start: 20px !important;
+  margin-inline-end: 20px !important;
 }
